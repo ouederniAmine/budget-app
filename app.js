@@ -23,8 +23,8 @@ add_budget_btn.addEventListener(
     'click', (e) => {
         e.preventDefault();
         if (budgetFeild.value > 0) {
-            budget.innerText = `Rs ${Number(budgetFeild.value).toFixed(2)}`;
-            currentAmount.innerText = `Rs ${Number(budgetFeild.value).toFixed(2)}`;
+            budget.innerText = `${Number(budgetFeild.value).toFixed(2)} TND`;
+            currentAmount.innerText = `${Number(budgetFeild.value).toFixed(2)} TND`;
             budgetNumber = Number(budgetFeild.value);
             expenseAmount.innerText = 'Rs 00,00';
             expense.innerText = `Rs 00,000`;
@@ -53,7 +53,7 @@ const createExpenseList = (title, desc, amount, date) => {
                 <div class="date">${date}</div>
             </div>
         </div>
-            <button id="edit"><ion-icon name="create-outline"></ion-icon></button>
+            <button id="edit"><img style="width:20px" src="https://utfs.io/f/72aad55c-b2e9-4622-85ef-707286647764-1umfe.png"/></button>
             <button id="delete">X</button>
     `;
 
